@@ -8,13 +8,15 @@ function calculateBMI() {
   console.table({ age, weight, height, male, female });
   height= height/100
   let BMI = (weight/(height*height));
+  BMI = BMI.toFixed(2);
   alert("your BMI:" + BMI)
+
 
   // You are going to write the code here before the curly braces 👇🏻
 
   if (BMI <= 18.5){ alert("you are underweight")}
-  else if (BMI >= 18.5 && BMI <= 24.9) {alert("you are healthy ")}
-  else if(BMI >= 25 && BMI <= 29.9) alert("you are overweight")
+  else if (BMI <= 24.9) {alert("you are healthy ")}
+  else if(BMI <= 29.9) alert("you are overweight")
 else alert("you are obesite")
 
 if ((age >=19 && age <=24 ) && (BMI >= 19 && BMI <= 24) ) {alert ("healthy")}
